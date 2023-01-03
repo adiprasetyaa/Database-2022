@@ -1,0 +1,38 @@
+*** LAB ACTIVITY 2 - PERFORMING QUERIES ***
+
+Untuk kelas B kerjakan bagian B dulu setelah itu baru bagian A
+
+--- BAGIAN A : SQL STATEMENTS ---
+
+Buatlah statement SQL untuk menjalankan instruksi berikut secara terurut (1 SQL statement untuk 1 nomor). Untuk ID bisa diisi terserah
+
+1. Tambahkan data publisher dengan
+    Nama: Lee-Richards
+    Alamat: 4054 Amanda Lakes North Joshuaberg DC 87606
+    Nomor Telepon: 0014083477081334
+
+2. Tambahkan data buku dengan
+    Judul: Almost although help either natural state
+    Publisher: Lee-Richards
+
+3. Tambahkan data buku dengan
+    Judul: Surface wish travel difficult interesting
+    Publisher: Lee-Richards
+
+4. Update publisher Lee-Richards dengan mengatur
+    Alamat: 4054 Amanda Lakes, North Joshuaberg, DC 87606
+    Nomor Telepon: 001-408-347-7081x334
+
+5. Hapus buku: Surface wish travel difficult interesting
+
+--- BAGIAN B : SQL QUERIES ---
+
+Pastikan telah terisi oleh perpustakaan-data.sql
+
+Buatlah query SQL untuk menampilkan:
+
+1. List judul buku beserta alamat publishernya, terurut secara alfabetis a-z berdasarkan judul (clue: JOIN, ORDER BY)
+2. List judul buku beserta jumlah penulisnya, terurut secara alfabetis a-z berdasarkan judul (clue: JOIN, COUNT, GROUP BY, ORDER BY)
+3. Top 5 nama peminjam yang saat ini meminjam buku terbanyak (sertakan jumlah pinjamannya juga) (clue: JOIN, COUNT, GROUP BY, ORDER BY, TOP)
+4. Ketersediaan tiap-tiap buku pada tiap-tiap cabang perpustakaan (jumlah salinan dikurangi jumlah pinjaman). Urut a-z berdasarkan nama cabang kemudian judul buku (clue: SUBQUERY, LEFT JOIN, COUNT, GROUP BY, ORDER BY)
+5. Top 5 peminjam (nomor kartu & nama peminjam) dengan denda terbanyak (sertakan nominal dendanya juga) pada tanggal 26 Oktober 2022. Keterlambatan dikenakan denda sebesar 5000/hari. (clue: SUBQUERY, JOIN, DATEDIFF, CASE/WHERE, TOP)
